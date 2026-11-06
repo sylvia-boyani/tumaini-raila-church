@@ -1,0 +1,87 @@
+:root {
+  /* Primary colours */
+  --navy: #142B45;
+  --deep-navy: #263747;
+
+  /* Accent */
+  --champagne: #D5B779;
+
+  /* Backgrounds */
+  --ivory: #FAF7F0;
+  --white: #FFFFFF;
+
+  /* Supporting colour */
+  --slate-blue: #536477;
+
+  /* Typography */
+  --heading-font: 'Cormorant Garamond', serif;
+  --body-font: 'Poppins', sans-serif;
+}
+
+
+:root {
+  /* Brand colours */
+  --navy: #142B45;
+  --deep-navy: #263747;
+  --champagne: #D5B779;
+  --ivory: #FAF7F0;
+  --white: #FFFFFF;
+  --slate-blue: #536477;
+
+  /* Typography */
+  --heading-font: 'Cormorant Garamond', serif;
+  --body-font: 'Poppins', sans-serif;
+
+  /* Layout */
+  --container-width: 1440px;
+  --section-padding: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--ivory);
+  color: var(--navy);
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--champagne);
+  color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 65px;
+  }
+}
