@@ -17,7 +17,7 @@ import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 
 import Gallery from "./pages/Gallery/Gallery";
 import Contact from "./pages/Contact/Contact";
-
+import Footer from "./components/Footer/Footer";
 import "./styles/global.css";
 
 // Homepage
@@ -35,6 +35,7 @@ function Home() {
         <ChurchLife />
         <UpcomingEvents />
       </main>
+      <Footer />
     </>
   );
 }
@@ -58,6 +59,7 @@ function App() {
             <>
               <Navbar />
               <Gallery />
+              <Footer />
             </>
           }
         />
@@ -68,6 +70,7 @@ function App() {
             <>
               <Navbar />
               <Contact />
+              <Footer />
             </>
           }
         />

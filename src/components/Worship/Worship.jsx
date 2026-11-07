@@ -29,8 +29,8 @@ const services = [
     number: "02",
     title: "Home Fellowship Groups",
     subtitle: "Growing together through God's Word",
-    day: "Teusdays - Neema Fellowship",
-    time: "Saturdays - Grace Fellowship",
+    day: "Teusday - Neema Fellowship",
+    time: "Saturday - Imani Fellowship",
     icon: BookOpen,
     featured: false
   },

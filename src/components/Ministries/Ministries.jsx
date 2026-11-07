@@ -192,15 +192,20 @@ function Ministries() {
           </p>
 
           <div className="hope-school-details">
-            <span>PRIMARY EDUCATION</span>
-            <span>FAITH & CHARACTER</span>
-            <span>LEARNING & PURPOSE</span>
+            <span>EARLY YEARS EDUCATION</span>
+            <span>UPPER PRIMARY SCHOOL</span>
+            <span>JUNIOR SCHOOL</span>
           </div>
 
-          <div className="hope-school-link">
-            <span>Discover Hope School</span>
-            <ArrowUpRight size={19} />
-          </div>
+          <a
+  href="https://hope-school.onrender.com/"
+  className="hope-school-link"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>Discover Hope School</span>
+  <ArrowUpRight size={19} />
+</a>
 
           <small>
             Visit the dedicated Hope School website.
