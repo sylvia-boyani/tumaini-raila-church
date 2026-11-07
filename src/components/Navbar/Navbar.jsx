@@ -6,30 +6,36 @@ import {
   X,
   ArrowUpRight
 } from "lucide-react";
+import {
+  Link,
+  useLocation
+} from "react-router-dom";
 import "./Navbar.css";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About Us", href: "#about" },
-  { name: "Ministries", href: "#ministries" },
-  { name: "Sermons", href: "#sermons" },
-  { name: "Events", href: "#events" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Contact", href: "#contact" }
+  { name: "Home", href: "/", section: false },
+  { name: "About Us", href: "/#about", section: true },
+  { name: "Ministries", href: "/#ministries", section: true },
+  { name: "Events", href: "/#events", section: true },
+  { name: "Gallery", href: "/gallery", section: false },
+  { name: "Contact", href: "/contact", section: false }
 ];
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const closeMenu = () => setMenuOpen(false);
+
+  const isHomePage = location.pathname === "/";
 
   return (
     <header className="church-navbar">
       <div className="navbar-container">
 
         {/* Church Logo */}
-        <a
-          href="#home"
+        <Link
+          to="/"
           className="church-brand"
           onClick={closeMenu}
         >
@@ -45,38 +51,48 @@ function Navbar() {
               RAILA
             </span>
           </div>
-        </a>
+        </Link>
 
-        {/* Desktop Navigation */}
+        {/* Navigation */}
         <nav
+          id="mobile-navigation"
           className={`nav-links ${menuOpen ? "active" : ""}`}
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               onClick={closeMenu}
+              className={
+                link.name === "Gallery" && location.pathname === "/gallery"
+                  ? "nav-active"
+                  : ""
+              }
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
-          <a
-            href="#visit"
+          <Link
+            to="/#contact"
             className="mobile-visit-link"
             onClick={closeMenu}
           >
             Plan Your Visit
             <ArrowUpRight size={17} />
-          </a>
+          </Link>
         </nav>
 
         {/* Desktop CTA */}
-        <a href="#visit" className="visit-button">
+        <Link
+          to="/#contact"
+          className="visit-button"
+          onClick={closeMenu}
+        >
           <span>Plan Your Visit</span>
           <ArrowUpRight size={17} />
-        </a>
+        </Link>
 
         {/* Mobile Menu Button */}
         <button
