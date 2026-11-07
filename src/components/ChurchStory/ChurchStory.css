@@ -1,0 +1,283 @@
+
+.church-story {
+  width: 100%;
+  padding: 115px 0 100px;
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+
+.story-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 55px;
+}
+
+.story-eyebrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  color: var(--champagne);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 4px;
+
+  margin-bottom: 23px;
+}
+
+.story-eyebrow span {
+  width: 35px;
+  height: 1px;
+  background: var(--champagne);
+}
+
+.story-heading h2 {
+  font-family: var(--heading-font);
+  color: var(--white);
+
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.story-heading h2 em {
+  color: var(--champagne);
+  font-weight: 400;
+}
+
+.story-heading > p {
+  max-width: 620px;
+  margin: 23px auto 0;
+
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* IMAGE */
+
+.story-image {
+  position: relative;
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  margin-bottom: 55px;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.story-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(20, 43, 69, 0.8),
+    rgba(20, 43, 69, 0.1)
+  );
+}
+
+.story-image-overlay {
+  position: absolute;
+  left: 55px;
+  bottom: 55px;
+  z-index: 2;
+
+  color: var(--champagne);
+}
+
+.story-image-overlay p {
+  margin-top: 15px;
+
+  font-family: var(--heading-font);
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+/* STORY CARDS */
+
+.story-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.story-card {
+  position: relative;
+  padding: 35px 30px 40px;
+
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(213, 183, 121, 0.2);
+
+  transition: background 0.35s ease,
+              transform 0.35s ease;
+}
+
+.story-card:hover {
+  background: rgba(255, 255, 255, 0.085);
+  transform: translateY(-5px);
+}
+
+.story-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.story-card-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--champagne);
+  border: 1px solid rgba(213, 183, 121, 0.6);
+  border-radius: 50%;
+}
+
+.story-card-top > span {
+  font-family: var(--heading-font);
+  font-size: 25px;
+  color: rgba(213, 183, 121, 0.55);
+}
+
+.story-card h3 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white);
+
+  margin-bottom: 14px;
+}
+
+.story-card > p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.story-card-line {
+  width: 40px;
+  height: 2px;
+  background: var(--champagne);
+  margin-top: 27px;
+}
+
+/* SCRIPTURE QUOTE */
+
+.story-quote {
+  text-align: center;
+  margin-top: 85px;
+}
+
+.quote-mark {
+  display: block;
+  color: var(--champagne);
+  font-family: var(--heading-font);
+  font-size: 65px;
+  height: 40px;
+}
+
+.story-quote p {
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-size: 32px;
+  font-style: italic;
+}
+
+.quote-reference {
+  display: block;
+  color: var(--champagne);
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .story-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story-image {
+    height: 330px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .church-story {
+    padding: 80px 0;
+  }
+
+  .story-container {
+    width: 88%;
+  }
+
+  .story-heading {
+    margin-bottom: 38px;
+  }
+
+  .story-heading h2 {
+    font-size: 48px;
+  }
+
+  .story-heading > p {
+    font-size: 12px;
+  }
+
+  .story-image {
+    height: 280px;
+    margin-bottom: 35px;
+  }
+
+  .story-image-overlay {
+    left: 20px;
+    bottom: 25px;
+  }
+
+  .story-image-overlay p {
+    font-size: 25px;
+  }
+
+  .story-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .story-card {
+    padding: 27px 24px 30px;
+  }
+
+  .story-quote {
+    margin-top: 60px;
+  }
+
+  .story-quote p {
+    font-size: 26px;
+  }
+}

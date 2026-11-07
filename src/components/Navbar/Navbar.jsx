@@ -39,10 +39,10 @@ function Navbar() {
 
           <div className="brand-text">
             <span className="brand-name">
-              TUMAINI RAILA
+              TUMAINI CHURCH
             </span>
             <span className="brand-subtitle">
-              CHURCH
+              RAILA
             </span>
           </div>
         </a>

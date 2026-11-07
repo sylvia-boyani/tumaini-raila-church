@@ -1,0 +1,372 @@
+
+.ministries-section {
+  width: 100%;
+  padding: 115px 0 0;
+  background: var(--ivory);
+  overflow: hidden;
+}
+
+.ministries-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.ministries-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 65px;
+}
+
+.ministries-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  color: #A48750;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin-bottom: 22px;
+}
+
+.ministries-eyebrow span {
+  width: 35px;
+  height: 1px;
+  background: var(--champagne);
+}
+
+.ministries-heading h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 500;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+.ministries-heading h2 em {
+  color: #A48750;
+  font-weight: 400;
+}
+
+.ministries-heading > p {
+  max-width: 620px;
+  margin: 23px auto 0;
+
+  color: var(--slate-blue);
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* MINISTRY GRID */
+
+.ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 27px;
+}
+
+/* MINISTRY CARD */
+
+.ministry-card {
+  background: var(--white);
+  overflow: hidden;
+  border: 1px solid rgba(20, 43, 69, 0.07);
+
+  transition: transform 0.35s ease,
+              box-shadow 0.35s ease;
+}
+
+.ministry-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20, 43, 69, 0.09);
+}
+
+/* CARD IMAGE */
+
+.ministry-image {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ministry-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.ministry-card:hover .ministry-image img {
+  transform: scale(1.07);
+}
+
+.ministry-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  color: var(--white);
+  background: rgba(20, 43, 69, 0.85);
+
+  padding: 8px 12px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.ministry-image-icon {
+  position: absolute;
+  right: 18px;
+  bottom: 0;
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--champagne);
+  color: var(--navy);
+}
+
+/* CARD CONTENT */
+
+.ministry-card-content {
+  padding: 25px 25px 22px;
+}
+
+.ministry-card-content h3 {
+  font-family: var(--heading-font);
+  font-size: 27px;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.ministry-card-content > p {
+  min-height: 75px;
+
+  color: var(--slate-blue);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.9;
+}
+
+.ministry-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 22px;
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(20, 43, 69, 0.1);
+
+  color: #A48750;
+}
+
+.ministry-card-bottom span {
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* HOPE SCHOOL */
+
+.hope-school-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 115px;
+  background: var(--navy);
+}
+
+.hope-school-image {
+  min-height: 530px;
+  overflow: hidden;
+}
+
+.hope-school-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 530px;
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.8s ease;
+}
+
+.hope-school-section:hover .hope-school-image img {
+  transform: scale(1.025);
+}
+
+.hope-school-content {
+  padding: 75px clamp(30px, 6vw, 90px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hope-school-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--champagne);
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+}
+
+.hope-school-content h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(48px, 5vw, 68px);
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.hope-school-content h3 {
+  font-family: var(--heading-font);
+  color: var(--champagne);
+  font-size: clamp(21px, 2.4vw, 29px);
+  font-weight: 400;
+  font-style: italic;
+
+  margin-top: 15px;
+}
+
+.hope-gold-line {
+  width: 55px;
+  height: 2px;
+  background: var(--champagne);
+  margin: 28px 0;
+}
+
+.hope-school-content > p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 2;
+  max-width: 480px;
+}
+
+.hope-school-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+.hope-school-details span {
+  padding: 9px 11px;
+
+  border: 1px solid rgba(213, 183, 121, 0.35);
+  color: var(--champagne);
+
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.hope-school-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 35px;
+  color: var(--navy);
+  background: var(--champagne);
+
+  padding: 15px 22px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.hope-school-content > small {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .ministries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hope-school-content {
+    padding: 45px 35px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .ministries-section {
+    padding-top: 80px;
+  }
+
+  .ministries-container {
+    width: 88%;
+  }
+
+  .ministries-heading {
+    margin-bottom: 40px;
+  }
+
+  .ministries-heading h2 {
+    font-size: 48px;
+  }
+
+  .ministries-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ministry-image {
+    height: 250px;
+  }
+
+  .ministry-card-content > p {
+    min-height: auto;
+  }
+
+  .hope-school-section {
+    grid-template-columns: 1fr;
+    margin-top: 75px;
+  }
+
+  .hope-school-image,
+  .hope-school-image img {
+    min-height: 300px;
+    height: 300px;
+  }
+
+  .hope-school-content {
+    padding: 50px 7%;
+  }
+
+  .hope-school-content h2 {
+    font-size: 55px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ministry-card,
+  .ministry-image img,
+  .hope-school-image img {
+    transition: none;
+  }
+}

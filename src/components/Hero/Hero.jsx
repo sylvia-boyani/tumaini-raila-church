@@ -27,7 +27,7 @@ function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="hero-line" />
-          <span>WELCOME TO TUMAINI RAILA CHURCH</span>
+          <span>WELCOME TO TUMAINI CHURCH, RAILA</span>
           <span className="hero-line" />
         </motion.div>
 
