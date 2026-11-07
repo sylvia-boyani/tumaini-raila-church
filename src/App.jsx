@@ -1,6 +1,7 @@
 
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Welcome from "./components/Welcome/Welcome";
 
 import "./styles/global.css";
 
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Hero />
+        <Welcome />
       </main>
     </>
   );

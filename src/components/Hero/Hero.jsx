@@ -80,7 +80,7 @@ function Hero() {
           <span>FAITH. LOVE. HOPE.</span>
         </div>
 
-        <a href="#welcome" className="hero-scroll">
+        <a href="#about" className="hero-scroll">
           <span>SCROLL TO EXPLORE</span>
           <ChevronDown size={17} />
         </a>

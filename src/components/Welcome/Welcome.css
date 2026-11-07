@@ -1,0 +1,279 @@
+
+.welcome-section {
+  position: relative;
+  width: 100%;
+  background: var(--ivory);
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.welcome-container {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+/* IMAGE AREA */
+
+.welcome-image-wrapper {
+  position: relative;
+  padding: 0 25px 25px 0;
+}
+
+.welcome-image-frame {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.welcome-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.welcome-image-wrapper:hover
+.welcome-image-frame img {
+  transform: scale(1.04);
+}
+
+.welcome-image-accent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 75%;
+  height: 75%;
+
+  border: 1px solid var(--champagne);
+  z-index: 1;
+}
+
+/* IMAGE CAPTION */
+
+.welcome-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+
+  background: var(--navy);
+  color: var(--champagne);
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  padding: 19px 25px;
+
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* CONTENT */
+
+.welcome-content {
+  padding: 15px 0;
+}
+
+.welcome-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  color: #A48750;
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+
+  margin-bottom: 25px;
+}
+
+.welcome-eyebrow span {
+  width: 35px;
+  height: 1px;
+  background: var(--champagne);
+}
+
+.welcome-content h2 {
+  font-family: var(--heading-font);
+  font-size: clamp(43px, 4.3vw, 64px);
+  font-weight: 500;
+  line-height: 1.05;
+
+  color: var(--navy);
+
+  margin-bottom: 27px;
+}
+
+.welcome-content h2 em {
+  color: #A48750;
+  font-weight: 400;
+}
+
+.welcome-lead {
+  color: var(--navy);
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+.welcome-description {
+  color: var(--slate-blue);
+
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 2;
+
+  margin-bottom: 30px;
+}
+
+/* VALUES */
+
+.welcome-values {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 24px 0;
+  border-top: 1px solid rgba(83, 100, 119, 0.2);
+  border-bottom: 1px solid rgba(83, 100, 119, 0.2);
+}
+
+.welcome-value {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.value-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(213, 183, 121, 0.7);
+  color: #A48750;
+
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.welcome-value h4 {
+  font-family: var(--heading-font);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.welcome-value span {
+  color: var(--slate-blue);
+  font-size: 11px;
+  font-weight: 300;
+}
+
+/* STORY LINK */
+
+.welcome-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 30px;
+
+  color: var(--navy);
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border-bottom: 1px solid var(--champagne);
+  padding-bottom: 9px;
+
+  transition: all 0.3s ease;
+}
+
+.welcome-link:hover {
+  color: #A48750;
+  gap: 18px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .welcome-container {
+    gap: 55px;
+  }
+
+  .welcome-image-frame {
+    height: 470px;
+  }
+
+  .welcome-content h2 {
+    font-size: 46px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 75px 0;
+  }
+
+  .welcome-container {
+    width: 88%;
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .welcome-image-wrapper {
+    max-width: 550px;
+  }
+
+  .welcome-image-frame {
+    height: 430px;
+  }
+
+  .welcome-content h2 {
+    font-size: clamp(43px, 10vw, 55px);
+  }
+
+  .welcome-lead {
+    font-size: 14px;
+  }
+
+  .welcome-description {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-image-frame {
+    height: 340px;
+  }
+
+  .welcome-image-caption {
+    padding: 15px;
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+}
