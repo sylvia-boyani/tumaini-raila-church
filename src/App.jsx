@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Welcome from "./components/Welcome/Welcome";
 import ChurchStory from "./components/ChurchStory/ChurchStory";
 import Ministries from "./components/Ministries/Ministries";
+import Worship from "./components/Worship/Worship";
 
 import "./styles/global.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Welcome />
         <ChurchStory />
         <Ministries />
+        <Worship />
       </main>
     </>
   );
