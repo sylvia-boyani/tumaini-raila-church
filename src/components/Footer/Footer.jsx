@@ -51,7 +51,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} Tumaini Raila Church.
+          © {new Date().getFullYear()} Tumaini Church, Raila.
           All rights reserved.
         </p>
         <p>Built on Faith. United in Purpose.</p>

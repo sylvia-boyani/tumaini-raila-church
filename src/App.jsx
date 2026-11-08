@@ -17,6 +17,7 @@ import UpcomingEvents from "./components/UpcomingEvents/UpcomingEvents";
 
 import Gallery from "./pages/Gallery/Gallery";
 import Contact from "./pages/Contact/Contact";
+import Give from "./pages/Give/Give";
 import Footer from "./components/Footer/Footer";
 import "./styles/global.css";
 
@@ -63,6 +64,17 @@ function App() {
             </>
           }
         />
+
+        <Route
+    path="/give"
+    element={
+      <>
+        <Navbar />
+        <Give />
+        <Footer />
+      </>
+    }
+  />
 
         <Route
           path="/contact"

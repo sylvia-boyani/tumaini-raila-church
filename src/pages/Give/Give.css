@@ -1,0 +1,416 @@
+/* =================================
+   GIVE PAGE
+================================= */
+
+.give-page {
+  background: var(--ivory);
+  color: var(--navy);
+  font-family: var(--body-font);
+}
+
+.give-container {
+  width: min(90%, var(--container-width));
+  margin: auto;
+}
+
+.give-eyebrow {
+  display: inline-block;
+  color: var(--champagne);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* HERO */
+
+.give-hero {
+  min-height: 690px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 43, 69, 0.96),
+      rgba(20, 43, 69, 0.78),
+      rgba(20, 43, 69, 0.25)
+    ),
+    url("/images/give.jpeg") center/cover no-repeat;
+}
+
+.give-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 43, 69, 0.35),
+    transparent 60%
+  );
+}
+
+.give-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.give-hero h1 {
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-size: clamp(52px, 7vw, 88px);
+  font-weight: 500;
+  line-height: 1.04;
+  max-width: 850px;
+  margin-bottom: 28px;
+}
+
+.give-hero h1 span {
+  color: var(--champagne);
+  font-style: italic;
+}
+
+.give-hero-content > p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.9;
+  max-width: 540px;
+  margin-bottom: 35px;
+}
+
+.give-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 27px;
+  background: var(--champagne);
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--champagne);
+  transition: 0.3s ease;
+}
+
+.give-primary-btn:hover {
+  background: transparent;
+  color: var(--champagne);
+}
+
+.give-hero-bottom {
+  position: absolute;
+  bottom: 28px;
+  right: 5%;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+/* INTRODUCTION */
+
+.give-intro {
+  padding: 110px 0;
+}
+
+.give-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.give-intro-heading h2,
+.give-section-heading h2,
+.give-cta h2 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: clamp(38px, 4.5vw, 58px);
+  line-height: 1.15;
+}
+
+.give-intro-heading h2 span {
+  color: var(--slate-blue);
+  font-style: italic;
+}
+
+.give-intro-text p {
+  color: var(--slate-blue);
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+/* SECTION HEADINGS */
+
+.give-section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 55px;
+}
+
+.give-section-heading .give-eyebrow {
+  color: #a9894e;
+}
+
+.give-section-heading h2 {
+  margin-bottom: 17px;
+}
+
+.give-section-heading p {
+  color: var(--slate-blue);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* GIVING OPTIONS */
+
+.giving-options-section {
+  background: var(--white);
+  padding: 110px 0;
+}
+
+.giving-options-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.giving-option-card {
+  padding: 30px 25px;
+  background: var(--ivory);
+  border: 1px solid rgba(20, 43, 69, 0.07);
+  display: flex;
+  flex-direction: column;
+  min-height: 355px;
+  transition: 0.3s ease;
+}
+
+.giving-option-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--champagne);
+  box-shadow: 0 15px 35px rgba(20, 43, 69, 0.08);
+}
+
+.giving-option-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.giving-option-number {
+  color: var(--champagne);
+  font-family: var(--heading-font);
+  font-size: 24px;
+}
+
+.giving-option-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  color: var(--champagne);
+  border-radius: 50%;
+  font-size: 17px;
+}
+
+.giving-option-card h3 {
+  font-family: var(--heading-font);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.giving-option-card > p {
+  color: var(--slate-blue);
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.giving-option-details {
+  color: var(--slate-blue);
+  font-size: 11px;
+  line-height: 1.7;
+  border-top: 1px solid rgba(20, 43, 69, 0.12);
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.giving-option-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 18px;
+  transition: 0.3s ease;
+}
+
+.giving-option-link:hover {
+  color: #a9894e;
+  gap: 15px;
+}
+
+/* MINISTRIES */
+
+.give-ministries {
+  padding: 110px 0;
+  background: var(--ivory);
+}
+
+.give-ministries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.give-ministry-card {
+  padding: 30px 25px;
+  background: var(--white);
+  border-bottom: 3px solid var(--champagne);
+  transition: 0.3s ease;
+}
+
+.give-ministry-card:hover {
+  transform: translateY(-5px);
+  background: var(--navy);
+}
+
+.give-ministry-card > span {
+  color: var(--champagne);
+  font-family: var(--heading-font);
+  font-size: 25px;
+}
+
+.give-ministry-card h3 {
+  font-family: var(--heading-font);
+  font-size: 23px;
+  margin: 22px 0 12px;
+  transition: 0.3s ease;
+}
+
+.give-ministry-card p {
+  color: var(--slate-blue);
+  font-size: 12px;
+  line-height: 1.9;
+  transition: 0.3s ease;
+}
+
+.give-ministry-card:hover h3 {
+  color: var(--white);
+}
+
+.give-ministry-card:hover p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* CLOSING CTA */
+
+.give-cta {
+  padding: 110px 0;
+  text-align: center;
+  background: var(--navy);
+}
+
+.give-cta-content {
+  max-width: 750px;
+}
+
+.give-cta h2 {
+  color: var(--white);
+  margin-bottom: 22px;
+}
+
+.give-cta h2 span {
+  color: var(--champagne);
+  font-style: italic;
+}
+
+.give-cta p {
+  max-width: 570px;
+  margin: 0 auto 30px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .giving-options-grid,
+  .give-ministries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .give-intro-grid {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .give-hero {
+    min-height: 600px;
+    background-position: 60% center;
+  }
+
+  .give-hero-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .give-hero h1 {
+    font-size: 54px;
+  }
+
+  .give-intro,
+  .giving-options-section,
+  .give-ministries,
+  .give-cta {
+    padding: 75px 0;
+  }
+
+  .give-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .give-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .give-hero-bottom {
+    left: 5%;
+    right: auto;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .giving-options-grid,
+  .give-ministries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .give-hero h1 {
+    font-size: 45px;
+  }
+
+  .give-intro-heading h2,
+  .give-section-heading h2,
+  .give-cta h2 {
+    font-size: 39px;
+  }
+
+  .giving-option-card {
+    min-height: 320px;
+  }
+}

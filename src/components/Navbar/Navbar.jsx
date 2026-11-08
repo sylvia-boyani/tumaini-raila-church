@@ -16,7 +16,7 @@ const navLinks = [
   { name: "Home", href: "/", section: false },
   { name: "About Us", href: "/#about", section: true },
   { name: "Ministries", href: "/#ministries", section: true },
-  { name: "Events", href: "/#events", section: true },
+  { name: "Give", href: "/give", section: false },
   { name: "Gallery", href: "/gallery", section: false },
   { name: "Contact", href: "/contact", section: false }
 ];
@@ -75,7 +75,7 @@ function Navbar() {
           ))}
 
           <Link
-            to="/#contact"
+            to="/contact"
             className="mobile-visit-link"
             onClick={closeMenu}
           >
@@ -86,7 +86,7 @@ function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          to="/#contact"
+          to="/contact"
           className="visit-button"
           onClick={closeMenu}
         >
